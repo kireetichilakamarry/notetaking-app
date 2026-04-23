@@ -1,0 +1,13 @@
+{
+  "name": "cornell-notes",
+  "version": "1.0.0",
+  "description": "A digital modified Cornell Notes system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "codemirror": "^5.65.16"
+  }
+}

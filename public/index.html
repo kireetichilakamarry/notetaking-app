@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cornell Notes</title>
+  <link rel="stylesheet" href="/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Vault Setup Overlay -->
+  <div id="vault-overlay" class="overlay">
+    <div class="overlay-box">
+      <h2>Open Vault</h2>
+      <p>Enter the full path to your notes folder:</p>
+      <input id="vault-input" type="text" placeholder="/Users/you/Notes" spellcheck="false" />
+      <span id="vault-error" class="error"></span>
+      <button id="open-vault-btn">Open Vault</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="app-header">
+    <div class="header-left">
+      <span class="app-title">Cornell Notes</span>
+      <span id="vault-path" class="vault-path"></span>
+    </div>
+    <div class="header-right">
+      <span id="current-file" class="current-file"></span>
+      <button id="change-vault-btn" class="btn-outline">Change Vault</button>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <div id="app-body">
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-header">
+        <span>Notes</span>
+        <button id="new-note-btn" class="btn-icon" title="New note">+</button>
+      </div>
+      <div id="file-list"></div>
+    </aside>
+
+    <!-- Editors -->
+    <main id="editor-area">
+      <div id="questions-panel" class="editor-panel">
+        <div class="panel-header">Questions</div>
+        <div id="questions-editor" class="editor-container"></div>
+      </div>
+      <div class="col-divider"></div>
+      <div id="notes-panel" class="editor-panel">
+        <div class="panel-header">Notes</div>
+        <div id="notes-editor" class="editor-container"></div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="/codemirror/lib/codemirror.js"></script>
+  <script src="/codemirror/mode/xml/xml.js"></script>
+  <script src="/codemirror/mode/markdown/markdown.js"></script>
+  <script src="/codemirror/addon/edit/continuelist.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
