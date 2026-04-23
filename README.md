@@ -6,10 +6,11 @@ Like Cornell Notes, a page contains two columns: one for **questions** and one f
 
 Like Obsidian, this application follows a file-over-app philosophy (see this [post](https://x.com/kepano/status/1675626836821409792?s=20) for more details). This allows you to edit across multiple such applications and integrate with CLIs such as Claude Code.
 
-# Future Ideas
+# Future To-Dos
 
 1. Tab-Based Indentation
-2. Dynamic Updating of Bullet Numbering, 
+2. Dynamic Updating of Bullet Numbering
 3. Folder Support 
 4. Search support across all notes
 5. A way to signal that a question has been answered (e.g., strikethrough or a check box)
+6. Demo Video
